@@ -1,9 +1,20 @@
 import "./style.css";
 
-function Header() {
+interface WalletsProps {
+    isMenuActive: boolean;
+    setIsMenuActive: (value: boolean | ((prevVar: boolean) => boolean)) => void;
+}
+
+function Header(props: WalletsProps) {
+
+    function toggle() {
+        props.isMenuActive ? props.setIsMenuActive(false) : props.setIsMenuActive(true);
+        console.log(props.isMenuActive);
+    }
+
     return (
         <header className="header">
-            <button className="menu-button">
+            <button className="menu-button" onClick={toggle}>
                 <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><title/><g data-name="1" id="_1"><path d="M441.13,166.52h-372a15,15,0,1,1,0-30h372a15,15,0,0,1,0,30Z"/><path d="M441.13,279.72h-372a15,15,0,1,1,0-30h372a15,15,0,0,1,0,30Z"/><path d="M441.13,392.92h-372a15,15,0,1,1,0-30h372a15,15,0,0,1,0,30Z"/></g></svg>
             </button>
             <h1>MyInvest</h1>

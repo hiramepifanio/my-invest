@@ -1,11 +1,14 @@
+import { useState } from "react";
 import Header from "../../components/header";
 import SidebarMenu from "../../components/sidebarMenu";
 
 function WalletsPage() {
+    const [isMenuActive, setIsMenuActive] = useState(false);
+
     return (
         <>
-            <Header/>
-            <SidebarMenu/>
+            <Header setIsMenuActive={setIsMenuActive} isMenuActive={isMenuActive}/>
+            <SidebarMenu isMenuActive={isMenuActive}/>
         </>
     );
 }

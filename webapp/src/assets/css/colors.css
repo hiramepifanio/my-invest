@@ -1,0 +1,10 @@
+:root {
+    --col-txt: white;
+    --col-txt-sec: #95999C;
+    --col-pri: #191A19;
+    --col-sec: #282828;
+    --col-grn: #48C92D;
+    --col-red: #F23434;
+
+    --fil-txt: invert(100%) sepia(87%) saturate(2%) hue-rotate(178deg) brightness(111%) contrast(101%);
+}

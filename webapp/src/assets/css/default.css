@@ -1,0 +1,8 @@
+* {
+    color: var(--col-txt);
+}
+
+body {
+    background-color: var(--col-pri);
+    font-family: 'Open Sans', sans-serif;
+}

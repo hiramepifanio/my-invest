@@ -1,0 +1,54 @@
+.menu-sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 65vw;
+    position:absolute;
+    background-color: var(--col-sec);
+    justify-content: flex-start;
+    padding-top: 32px;
+    position:absolute;
+    left: -100vw;
+    transition: .25s;
+}
+
+.menu-sidebar--active {
+    left: 0;
+    transition: .25s;
+}
+
+.menu__link {
+    color: var(--col-txt-sec);
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+    padding-left: 32px;
+}
+
+.menu__link svg {
+    fill: var(--col-txt-sec);
+    width: 24px;
+}
+
+.menu__link--wallets svg path {
+    stroke: var(--col-txt-sec);
+}
+
+.menu__link--orders svg circle, .menu__link--orders svg line {
+    stroke: var(--col-txt-sec);
+}
+
+.menu__link--active {
+    color: var(--col-txt);
+    border-left: 5px solid var(--col-txt);
+}
+
+.menu__link--active svg {
+    fill: var(--col-txt);
+}
+
+.menu__link--active svg path, .menu__link--active svg circle, .menu__link--active svg line {
+    stroke: var(--col-txt);
+}

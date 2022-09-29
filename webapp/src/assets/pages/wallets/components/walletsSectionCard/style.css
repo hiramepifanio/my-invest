@@ -1,0 +1,57 @@
+.card {
+    background-color: var(--col-sec);
+    height: 64px;
+    padding: 16px;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas: 
+        "titl menu"
+        "dtls menu"
+    ;
+    gap: 8px;
+}
+
+.wallet-card__title-container {
+    grid-area: titl;
+    display: flex;
+}
+
+.wallet-card__title {
+    height: 100%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-bottom: 1px solid var(--col-txt);
+}
+
+.wallet-card__details {
+    grid-area: dtls;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+
+}
+
+.wallet-card__details--variation {
+    font-size: .8rem;
+    color: var(--col-grn);
+}
+
+.wallet-card__menu {
+    grid-area: menu;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.wallet-card__menu__button {
+    width: 32px;
+}
+
+.wallet-card__menu__button--edit svg {
+    stroke: var(--col-txt);
+}
+
+.wallet-card__menu__button--delete svg {
+    fill: var(--col-txt);
+}

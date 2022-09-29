@@ -6,9 +6,6 @@ interface SidebarMenuProps {
 }
 
 function SidebarMenu(props: SidebarMenuProps) {
-
-    
-
     return (
         <nav className={"menu-sidebar" + (props.isMenuActive ? " menu-sidebar--active" : "")}>
             <a className="menu__link menu__link--home" href="#">
